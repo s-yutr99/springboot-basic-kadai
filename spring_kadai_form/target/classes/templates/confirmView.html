@@ -6,6 +6,34 @@
 <title>入力確認</title>
 </head>
 
+<style>
+  /* 表全体のスタイル */
+  table {
+    border-collapse: collapse; 
+    width: 80%;                
+    margin: 20px 0;           
+  }
+
+  /* 枠線の指定 */
+  table, th, td {
+    border: 2px solid black;  
+  }
+
+  /* 見出しセル */
+  th {
+    background-color: #f8f8f8; 
+    text-align: center;     
+    padding: 10px;
+    font-size: 1.2em;
+  }
+
+  /* データセル */
+  td {
+    padding: 10px;
+    font-size: 1.1em;
+  }
+</style>
+
 <body>
 	<h2>入力内容をご確認ください。</h2>
 	
@@ -17,17 +45,17 @@
 		
 		<tr>
 			<td>お名前</td>
-			<td th:text="${contactform.name}"></td>
+			<td th:text="${contactForm.name}"></td>
 		</tr>
 		
 		<tr>
 			<td>メールアドレス</td>
-			<td th:text="${contactform.email}"></td>
+			<td th:text="${contactForm.email}"></td>
 		</tr>
 		
 		<tr>
 			<td>お問い合わせ内容</td>
-			<td th:text="${contactform.message}"></td>
+			<td th:text="${contactForm.message}"></td>
 		</tr>
 	</table>
 		
